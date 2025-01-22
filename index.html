@@ -44,11 +44,74 @@
 
             <header>
                 <section>
-                    banner
+                    <img src="img/sea-4768869_1920.jpg" alt="Banner med hav og sand" class="banner">
                 </section>
 
                 <section>
-                    bestillingsskjema
+                    <nav>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
+                            <li><a href="#"><i class="fa-solid fa-plane"></i>Fly</a></li>
+                            <li><a href="#"><i class="fa-solid fa-city"></i>Storby</a></li>
+                            <li><a href="#"><i class="fa-solid fa-person-skiing"></i>Ski</a></li>
+                            <li><a href="#"><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <form>
+
+                        <fieldset>
+                            <legend>Fra</legend>
+                            <label>
+                                <select required>
+                                    <option value="">Oslo Lufthavn</option>
+                                    <option value="Torp Sandefjord Lufthavn">Torp Sandefjord Lufthavn</option>
+                                    <option value="Bergen Lufthavn">Bergen Lufthavn</option>
+                                    <option value="Alta Lufthavn">Alta Lufthavn</option>
+                                </select>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Til</legend>
+                            <label>
+                                <select required>
+                                    <option value="">Albania</option>
+                                    <option value="Danmark">Danmark</option>
+                                    <option value="Finnland">Finnland</option>
+                                    <option value="Hellas">Hellas</option>
+                                </select>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Resielengde</legend>
+                            <label>
+                                <select required>
+                                    <option value="">Mindre enn 1 uke</option>
+                                    <option value="1 Uke">1 Uke</option>
+                                    <option value="2 Uker">2 Uker</option>
+                                    <option value="Mer enn 2 Uker">Mer enn 2 Uker</option>
+                                </select>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Velg dato</legend>
+                            <label>
+                                <input type="date" max="2023-12-31" required>
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Antall Reisende</legend>
+                            <label>
+                                <input type="number" min="1" max="50" required>
+                            </label>
+                        </fieldset>
+                        <input type="submit" value="Søk">
+                    </form>
+
                 </section>
 
             </header>
