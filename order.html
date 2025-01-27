@@ -65,9 +65,136 @@
                 </li>
             </ul>
         </nav>
+
+
         <main>
-            <section></section>
-            <section></section>
+            <details>
+                <summary>Dine Valg</summary>
+
+                <img src="img/landscape-2016308_640.jpg"> 
+                <h2>Parga Beach</h2>
+
+                <i class="fa-solid fa-sun checked"></i>
+                <i class="fa-solid fa-sun checked"></i>
+                <i class="fa-solid fa-sun checked"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-sun"></i>
+
+                <ul>
+                    <li><i class="fa-solid fa-map-location-dot"></i>Hellas, Parga</li>
+                    <li><i class="fa-regular fa-calendar"></i>Man 5 mai - man 12 mai 2025</li>
+                    <li> <i class="fa-regular fa-user"></i>2 Voksne</li>
+                    <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt.</li>
+                    <li> <i class="fa-solid fa-utensils"></i>Frokostbuffè</li>
+                    <li> <i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn-Preveza</li>
+                </ul>
+      
+                <p>22 003;-</p>
+                <p>19 803;-</p>
+
+
+            </details>
+       
+
+            <section>
+                <form>
+                    <h2>Oppgi dine bestillingsopplysninger</h2>
+                    <fieldset>
+                        <legend>Voksen 18 +</legend>
+                            <label>
+                                Fornavn(ifølgepass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+                            </label>
+                            <label>
+                                Etternavn(ifølgepass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required  >
+                            </label>
+                            <fieldset>
+                                Fødselsdato:
+                                <input type="number" min="1" max="5" placeholder="DD">
+                                <input type="number" min="1" max="5" placeholder="MM">
+                                <input type="number" min="1" max="5" placeholder="ÅÅÅÅ">  
+                            </fieldset>
+                            <p>Kjønn</p>
+                            <label>
+                                Kvinne
+                                <input type="radio" name="gender" value="female">
+                            </label>
+
+                            <label>
+                                Mann
+                               <input type="radio" name="gender" value="man"> 
+                            </label>
+
+                            <label>
+                                E-post:
+                                <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                            </label>
+
+                            <label>
+                                Gateadresse:
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+                            </label>
+
+                            <label>
+                                Poststed:
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+                            </label>
+
+                            <label>
+                                Telefonnummer:
+                                <input type="tel" pattern="[0-9]{8,12}" required> 
+                            </label>
+
+                            <label>
+                                Postnummer:
+                                <input type="number" min="4" max="30" required>
+                            </label>
+
+                            <label>
+                                Land
+                                <select required>
+                                <option value="">Velg et land</option>
+                                </select>
+                            </label>
+
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Voksen 18 +</legend>
+                            <label>
+                                Fornavn(ifølgepass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
+                            </label>
+                            <label>
+                                Etternavn(ifølgepass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required  >
+                            </label>
+                            <fieldset>
+                                Fødselsdato:
+                                <input type="number" min="1" max="5" placeholder="DD">
+                                <input type="number" min="1" max="5" placeholder="MM">
+                                <input type="number" min="1" max="5" placeholder="ÅÅÅÅ">  
+                            </fieldset>
+                            
+                            <p>Kjønn</p>
+                            <label>
+                                Kvinne
+                                <input type="radio" name="gender" value="female">
+                            </label>
+
+                            <label>
+                                Mann
+                               <input type="radio" name="gender" value="man"> 
+                            </label>
+
+                           
+
+                    </fieldset>
+                </form>
+               
+            </section>
+
         </main>
 
         <footer id="fot"> 
