@@ -1,5 +1,50 @@
 @use 'fonts' as *;
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: $mainFont;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr; 
+    grid-template-rows: repeat(3, auto);
+    row-gap: 2rem;
+        #globalh{
+            grid-column-start: 1;
+            grid-column-end: 4; 
+            grid-row: 1 / 2;
+            #account{
+
+                display: flex;
+                    justify-content: right;
+                
+            }
+        }
+        main{
+            grid-column-start: 2;
+            grid-column-end: 3; 
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 4; 
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+}
+/*Mobil*/
+@media only screen and (max-width: 800px){
+    #menu {
+        display: none; 
+    }
+    #grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto auto; 
+    }
+
 }
