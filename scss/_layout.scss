@@ -1,0 +1,6 @@
+.flex-container-center{
+    display: flex; // Setter display-egenskapen til flex for å aktivere flexbox-layout
+    justify-content: center; // Sentrerer innholdet horisontalt innenfor containeren
+    align-items: center; // Sentrerer innholdet vertikalt innenfor containeren
+    height: 100%; // Sørger for at containeren har full høyde
+}

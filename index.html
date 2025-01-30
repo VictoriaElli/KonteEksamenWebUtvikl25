@@ -2,8 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="widht=device-width, initila-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ikoner/css/solid.css">
         <link rel="stylesheet" href="ikoner/css/fontawesome.css">
         <link rel="stylesheet" href="ikoner/css/brands.css">
@@ -20,16 +19,20 @@
         <div id="grid-container">
         
             <header id="globalh">
-                <section id="account">
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a href="#">Opprette en konto</a>
-                    <a href="#"><i class="fa-regular fa-user"></i>Min side</a>
+                <section>
+                    <nav>
+                        <ul id="account">
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a id="konto" href="#">Opprette en konto</a> </li>
+                            <li><a href="#"><i class="fa-regular fa-user"></i>Min side</a></li>
+                        </ul>
+                    </nav>
+                    
                 </section>
                 <section>
-                    <a href="index.html"><img src="img/fav.png" alt="Nettested logo" class="logo"></a>
                     <nav>
                         <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-                        <ul class="flex-menu" id="menu">
+                        <ul id="menu">
                             <li>
                                 <a href="#tips">Tips og inspirasjon</a>
                             </li>
@@ -44,6 +47,7 @@
                             </li>
                         </ul>
                     </nav>
+                    <a href="index.html"><img src="img/fav.png" alt="Nettested logo" id="logo"></a>
                 </section>
             
             </header>
@@ -51,9 +55,11 @@
             <main>
 
                 <header>
-                    <section style="background-image: url(img/sea-4768869_1920.jpg);"></section>
+                    <section id="banner">
+                        <img src="img/sea-4768869_1920.jpg" alt="bakgrunnsbilde">
+                    </section>
 
-                    <section >
+                    <section id="nav-form">
                         <nav>
                             <ul>
                                 <li><a href="#"><i class="fa-solid fa-suitcase"></i>Fly + Hotell</a></li>
@@ -202,7 +208,7 @@
 
 
             <footer id="fot"> 
-                <section>
+                <section id="land">
                     <img src="flags/sweden.png" alt="Bilde av det svenske flagget"> Sverige
                     <img src="flags/denmark.png" alt="Bilde av det danske flagget"> Danmark
                     <img src="flags/norway.png" alt="Bilde av det norske flagget"> Norge
