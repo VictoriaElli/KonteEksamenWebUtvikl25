@@ -15,240 +15,275 @@
 
 
     <body>
-        <header>
-            <section>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#">Opprette en konto</a>
-                <a href="#"><i class="fa-regular fa-user"></i>Min side</a>
-            </section>
+        <div id="grid-container">
+            <header id="globalh">
+                <a href="#main" class="skip">Skip to main content</a>
+                <section>
+                    <nav>
+                        <ul id="account">
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a id="konto" href="#">Opprette en konto</a> </li>
+                            <li><a href="#"><i class="fa-regular fa-user"></i>Min side</a></li>
+                        </ul>
+                    </nav>
+                    
+                </section>
+                <section>
+                    <nav>
+                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                        <ul id="menu">
+                            <li>
+                                <a href="#tips">Tips og inspirasjon</a>
+                            </li>
+                            <li>
+                                <a href="hotell.html">Hotell</a>
+                            </li>
+                            <li>
+                                <a href="https://www.norwegian.no/" target="_blank">Fly</a>
+                            </li>
+                            <li>
+                                <a href="#fot">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="index.html"><img src="img/fav.png" alt="Nettested logo" id="logo"></a>
+                </section>
+            
+            </header>
+    
             <nav>
-                <a href="index.html"><img src="img/fav.png" alt="Logo" class="logo"></a>
                 <ul>
                     <li>
-                        <a href="index.html#tips">Tips og inspirasjon</a>
+                        <a href="index.html#bestillingsskjema">Søk</a>
                     </li>
                     <li>
-                        <a href="hotell.html">Hotell</a>
+                        <a href="hotell.html">Søkeresultater</a>
+                    </li>
+                    <li>
+                        <a href="hotell.html#Rom">Rom</a>
                     </li>
                     <li>
                         <a href="https://www.norwegian.no/" target="_blank">Fly</a>
                     </li>
                     <li>
-                        <a href="#fot">Kontakt</a>
+                        <a href="#">Tilegg</a>
+                    </li>
+                    <li>
+                        <a href="order.html">OPPLYSNINGER</a>
+                    </li>
+                    <li>
+                        <a href="#">Bestill</a>
                     </li>
                 </ul>
             </nav>
-        </header>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html#bestillingsskjema">Søk</a>
-                </li>
-                <li>
-                    <a href="hotell.html">Søkeresultater</a>
-                </li>
-                <li>
-                    <a href="hotell.html#Rom">Rom</a>
-                </li>
-                <li>
-                    <a href="https://www.norwegian.no/" target="_blank">Fly</a>
-                </li>
-                <li>
-                    <a href="#">Tilegg</a>
-                </li>
-                <li>
-                    <a href="order.html">OPPLYSNINGER</a>
-                </li>
-                <li>
-                    <a href="#">Bestill</a>
-                </li>
-            </ul>
-        </nav>
-
-
-        <main>
-            <details>
-                <summary>Dine Valg</summary>
-
-                <img src="img/landscape-2016308_640.jpg" alt="Basseng med solsenger"> 
-                <h2>Parga Beach</h2>
-
-                <i class="fa-solid fa-sun checked"></i>
-                <i class="fa-solid fa-sun checked"></i>
-                <i class="fa-solid fa-sun checked"></i>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-sun"></i>
-
-                <ul>
-                    <li><i class="fa-solid fa-map-location-dot"></i>Hellas, Parga</li>
-                    <li><i class="fa-regular fa-calendar"></i>Man 5 mai - man 12 mai 2025</li>
-                    <li> <i class="fa-regular fa-user"></i>2 Voksne</li>
-                    <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt.</li>
-                    <li> <i class="fa-solid fa-utensils"></i>Frokostbuffè</li>
-                    <li> <i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn-Preveza</li>
-                </ul>
-      
-                <p>22 003;-</p>
-                <p>19 803;-</p>
-
-
-            </details>
-       
-
-            <section>
-                <form>
-                    <h2>Oppgi dine bestillingsopplysninger</h2>
-                    <fieldset>
-                        <legend>Voksen 18 + Hovedbestiller</legend>
-                        <label>
-                            Fornavn(ifølge pass):
-                            <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
-                        </label>
-                        <label>
-                            Etternavn(ifølge pass):
-                            <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required  >
-                        </label>
-                        <fieldset>
-                            Fødselsdato:
-                            <input type="number" min="1" max="5" placeholder="DD">
-                            <input type="number" min="1" max="5" placeholder="MM">
-                            <input type="number" min="1" max="5" placeholder="ÅÅÅÅ">  
-                        </fieldset>
-                        <p>Kjønn</p>
-                        <label>
-                            Kvinne
-                            <input type="radio" name="gender" value="female">
-                        </label>
-
-                        <label>
-                            Mann
-                           <input type="radio" name="gender" value="man"> 
-                        </label>
-
-                        <label>
-                            E-post:
-                            <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-                        </label>
-
-                        <label>
-                            Gateadresse:
-                            <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
-                        </label>
-
-                        <label>
-                            Poststed:
-                            <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
-                        </label>
-
-                        <label>
-                            Telefonnummer:
-                            <input type="tel" pattern="[0-9]{8,12}" required> 
-                        </label>
-
-                        <label>
-                            Postnummer:
-                            <input type="number" min="4" max="30" required>
-                        </label>
-
-                        <label>
-                            Land
-                            <select required>
-                            <option value="">Velg et land</option>
-                            </select>
-                        </label>
-                            
-
-                    </fieldset>
     
-                    <fieldset>
-                        <legend>Voksen 18 +</legend>
-                        <label>
-                            Fornavn(ifølge pass):
-                            <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required >
-                        </label>
-                        <label>
-                            Etternavn(ifølge pass):
-                            <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required  >
-                        </label>
+    
+            <main id="main">
+                <details>
+                    <summary>Dine Valg</summary>
+    
+                    <img src="img/landscape-2016308_640.jpg" alt="Basseng med solsenger"> 
+                    <h2>Parga Beach</h2>
+    
+                    <i class="fa-solid fa-sun checked"></i>
+                    <i class="fa-solid fa-sun checked"></i>
+                    <i class="fa-solid fa-sun checked"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+    
+                    <ul>
+                        <li><i class="fa-solid fa-map-location-dot"></i>Hellas, Parga</li>
+                        <li><i class="fa-regular fa-calendar"></i>Man 5 mai - man 12 mai 2025</li>
+                        <li> <i class="fa-regular fa-user"></i>2 Voksne</li>
+                        <li><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt.</li>
+                        <li> <i class="fa-solid fa-utensils"></i>Frokostbuffè</li>
+                        <li> <i class="fa-solid fa-plane-departure"></i>Oslo Lufthavn-Preveza</li>
+                    </ul>
+          
+                    <p>22 003;-</p>
+                    <p>19 803;-</p>
+    
+    
+                </details>
+           
+    
+                <section>
+                    <form>
+                        <h2>Oppgi dine bestillingsopplysninger</h2>
                         <fieldset>
-                            Fødselsdato:
-                            <input type="number" min="1" max="5" placeholder="DD">
-                            <input type="number" min="1" max="5" placeholder="MM">
-                            <input type="number" min="1" max="5" placeholder="ÅÅÅÅ">  
+                            <legend>Voksen 18 + Hovedbestiller</legend>
+                            <label>
+                                Fornavn(ifølge pass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" title="Fornavn" required autocomplete="given-name">
+                            </label>
+                            <label>
+                                Etternavn(ifølge pass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}"title="Etternavn" required  autocomplete="family-name">
+                            </label>
+                            <fieldset>
+                                Fødselsdato:
+                                <input type="number" min="1" max="30" placeholder="DD" autocomplete="bday-day" required title="Fødesledato - dag" >
+                                <input type="number" min="1" max="12" placeholder="MM" autocomplete="bday-month" required title="Fødesledato - måned">
+                                <input type="number" min="1912" max="4000" placeholder="ÅÅÅÅ" autocomplete="bday-year" required title="Fødselsdato - årstall">  
+                            </fieldset>
+                            <p>Kjønn</p>
+                            <label>
+                                Kvinne
+                                <input type="radio" name="gender" value="female" >
+                            </label>
+    
+                            <label> 
+                                Mann
+                               <input type="radio" name="gender" value="man"> 
+                            </label>
+    
+                            <label>
+                                E-post:
+                                <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required autocomplete="email" title="E-post">
+                            </label>
+    
+                            <label>
+                                Gateadresse:
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required autocomplete="street-address" title="Gateadresse">
+                            </label>
+    
+                            <label>
+                                Poststed:
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required autocomplete="address-line1" title="Poststed">
+                            </label>
+    
+                            <label>
+                                Telefonnummer:
+                                <input type="tel" pattern="[0-9]{8,12}" required autocomplete="tel-national" title="Telefonnummer"> 
+                            </label>
+    
+                            <label>
+                                Postnummer:
+                                <input type="text"  pattern="[0-9]{4}" title="Firesifret postkode" required autocomplete="postal-code" title="Postnummer">
+                            </label>
+    
+                            <label>
+                                Land        
+                                <select required autocomplete="country" title="Tilhørighetsland">
+                                <option value="">Velg et land</option>
+                                <option value="Norge">Norge</option>
+                                </select>
+                            </label>
+                                
+    
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Voksen 18 +</legend>
+                            <label>
+                                Fornavn(ifølge pass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required autocomplete="given-name" title="Fornavn">
+                            </label>
+                            <label>
+                                Etternavn(ifølge pass):
+                                <input type="text" maxlength="45" pattern="[A-Za-zæøåÆØÅ ]{2,}" required   autocomplete="family-name" title="Etternavn">
+                            </label>
+                            <fieldset>
+                                Fødselsdato:
+                                <input type="number" min="1" max="30" placeholder="DD" autocomplete="bday-day" required title="Fødesledato - dag" >
+                                <input type="number" min="1" max="12" placeholder="MM" autocomplete="bday-month" required title="Fødesledato - måned">
+                                <input type="number" min="1912" max="4000" placeholder="ÅÅÅÅ" autocomplete="bday-year" required title="Fødselsdato - årstall">  
+                            </fieldset>
+                            
+                            <p>Kjønn</p>
+                            <label>
+                                Kvinne
+                                <input type="radio" name="gender" value="female">
+                            </label>
+    
+                            <label>
+                                Mann
+                               <input type="radio" name="gender" value="man"> 
+                            </label>
+                                
+                            
                         </fieldset>
                         
-                        <p>Kjønn</p>
                         <label>
-                            Kvinne
-                            <input type="radio" name="gender" value="female">
+                            <input type="submit" value="Siste Trinn →" />
                         </label>
+                    </form>
+                   
+                </section>
+    
+            </main>
+    
+            <footer id="fot"> 
+                <section id="land">
+                    <img src="flags/sweden.png" alt="Bilde av det svenske flagget"> Sverige
+                    <img src="flags/denmark.png" alt="Bilde av det danske flagget"> Danmark
+                    <img src="flags/norway.png" alt="Bilde av det norske flagget"> Norge
+                    <img src="flags/material.png" alt="Bilde av det finske flagget"> Finland
+                    <img src="flags/netherlands.png" alt="Bilde av det nederlandske flagget"> Nederland
+    
+    
+                </section>
 
+                <section>
+                    <h3>Betalingsmetoder</h3>
+                    <a><i class="fa-brands fa-cc-visa"></i></a>
+                    <a><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a><i class="fa-brands fa-cc-paypal"></i></a>
+                    <a><i class="fa-brands fa-cc-apple-pay"></i></a>
+                    <a><i class="fa-brands fa-cc-amazon-pay"></i></a>
+                </section>
+
+                <section>
+                    <h3>Nyheter og tilbud</h3>
+                    <fieldset>
+                        <legend>Meld deg på nyhetsbrev her</legend>
                         <label>
-                            Mann
-                           <input type="radio" name="gender" value="man"> 
+                            <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no"> 
                         </label>
-
+                        <input type="submit" value="Send"> 
                     </fieldset>
                     
-                </form>
-               
-            </section>
+                    <a href="#">Kjøp gavekort link</a>
 
-        </main>
+                </section>
 
-        <footer id="fot"> 
-            <section>
-               <img src="flags/sweden.png" alt="Bilde av det svenske flagget"> Sverige
-               <img src="flags/denmark.png" alt="Bilde av det danske flagget"> Danmark
-               <img src="flags/norway.png" alt="Bilde av det norske flagget"> Norge
-               <img src="flags/material.png" alt="Bilde av det finske flagget"> Finland
-               <img src="flags/netherlands.png" alt="Bilde av det nederlandske flagget"> Nederland
+                <section>
+                    <h3>Kundeservice</h3>
+                    <a href="#">Spørsmål og svar</a>
+                    <a href="#">Chat </a>
+                <a href="#">Kontakt</a>
+                    <a href="#">Tilgjengelighetserklæring</a>
+                </section>
 
+                <section>
+                    <h3>Sosiale Medier</h3>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </section>
 
-            </section>
+            </footer>
+    
+        </div>
 
-            <section>
-                <h3>Betalingsmetoder</h3>
-                <a><i class="fa-brands fa-cc-visa"></i></a>
-                <a><i class="fa-brands fa-cc-mastercard"></i></a>
-                <a><i class="fa-brands fa-cc-paypal"></i></a>
-                <a><i class="fa-brands fa-cc-apple-pay"></i></a>
-                <a><i class="fa-brands fa-cc-amazon-pay"></i></a>
-            </section>
-
-            <section>
-                <h3>Nyheter og tilbud</h3>
-                <fieldset>
-                    <legend>Meld deg på nyhetsbrev her</legend>
-                    <label>
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no"> 
-                    </label>
-                    <input type="submit" value="Send"> 
-                </fieldset>
+        <script>
+            
+            let toggleMenu = () => {
                 
-                <a href="#">Kjøp gavekort link</a>
-
-            </section>
-
-            <section>
-                <h3>Kundeservice</h3>
-                <a href="#">Spørsmål og svar</a>
-                <a href="#">Chat </a>
-               <a href="#">Kontakt</a>
-                <a href="#">Tilgjengelighetserklæring</a>
-            </section>
-
-            <section>
-                <h3>Sosiale Medier</h3>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </section>
-
-        </footer>
+                let x = document.getElementById("menu");
+        
+               
+                if (x.style.display === "flex") {
+                    
+                    x.style.display = "none";
+                } else {
+                    
+                    x.style.display = "flex";
+                }
+            }
+        </script>
 
     </body>
 

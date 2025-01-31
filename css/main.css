@@ -10,20 +10,65 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
+  max-width: 1400px;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #252525;
+}
+
+img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 1rem;
+}
+
+form {
+  background-color: #e8e8e8;
+}
+
+#tilbudsseksjon a {
+  color: #1ca2c1;
+}
+
+#kampanje a {
+  background-color: yellow;
 }
 
 #grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  max-width: 1400px;
+  display: flex;
+  display: inline-block;
   width: 100%;
   margin: 0;
+  width: 100%;
+  max-width: 1400px;
+  min-width: 750px;
 }
 #grid-container #globalh #account {
   display: flex;
@@ -32,15 +77,31 @@ a {
   list-style: none;
   gap: 1rem;
 }
-#grid-container #globalh #account nav {
-  display: flex;
-  justify-content: end;
-  text-decoration: none;
+
+#logo {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  padding: 3rem;
 }
-#grid-container #globalh #account nav ul {
+
+.product-card {
+  max-width: 1000px;
+  min-width: 500px;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 13px 9px 20px 0px #efefef;
+}
+.product-card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tips {
   display: flex;
-  justify-content: end;
-  list-style: none;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -67,7 +128,7 @@ main header section#nav-form {
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 5;
-  background-color: #f6f5f2;
+  background-color: #e8e8e8;
   padding: 1rem;
   margin: 3rem;
 }
@@ -77,23 +138,28 @@ main header section#nav-form ul {
   list-style: none;
   gap: 1rem;
 }
-main header section#nav-form ul a {
-  text-decoration: none;
-  color: black;
-}
 
-#fot {
-  display: flex;
-  max-width: none;
+footer {
+  display: inline-block;
+  width: 100%;
   background-color: #252525;
+  min-width: 750px;
   padding: 3rem;
+  margin: 0;
+  color: white;
 }
-#fot section#land {
+footer a {
+  color: white;
+}
+footer section#land {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+footer section#land img {
+  max-width: 100px;
 }
 
 /*Mobil*/
@@ -109,6 +175,10 @@ main header section#nav-form ul a {
 @media only screen and (min-width: 800px) {
   .fa-burger {
     display: none;
+  }
+  #logo {
+    min-width: 250px;
+    width: 100%;
   }
   #menu {
     display: flex !important;

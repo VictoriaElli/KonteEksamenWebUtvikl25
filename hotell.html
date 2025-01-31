@@ -13,209 +13,236 @@
 
 
     <body>
-        <header>
-
-            <section>
-                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="#">Opprette en konto</a>
-                <a href="#"><i class="fa-regular fa-user"></i>Min side</a>
-            </section>
-            <nav>
-                <a href="index.html"><img src="img/fav.png" alt="Logo" class="logo"></a>
-                <ul>
-                    <li>
-                        <a href="index.html#tips">Tips og inspirasjon</a>
-                    </li>
-                    <li>
-                        <a href="hotell.html">Hotell</a>
-                    </li>
-                    <li>
-                        <a href="https://www.norwegian.no/" target="_blank">Fly</a>
-                    </li>
-                    <li>
-                        <a href="#fot">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <header>
+        <div id="grid-container">
+            <header id="globalh">
+                <a href="#main" class="skip">Skip to main content</a>
                 <section>
-                    <img src="img/landscape-2016308_640.jpg" alt="Basseng med solsenger"> 
-                    <img src="img/beach-1836467_640.jpg" alt="Mennesker som bader på stranden"> 
-                    <img src="img/sea-4768869_1920.jpg" alt="Lys sand møter turkist vann"> 
-                    <img src="img/beach-666122_640.jpg" alt="Tropiske strand med brygge til styltehus med stråtak"> 
-                    <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand"> 
-                    <img src="img/holiday-2733322_1280.jpg" alt="Kvinne nyter utsiken mot tropiske stråhytter fra bassengkanten"> 
-                
+                    <nav>
+                        <ul id="account">
+                            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a id="konto" href="#">Opprette en konto</a> </li>
+                            <li><a href="#"><i class="fa-regular fa-user"></i>Min side</a></li>
+                        </ul>
+                    </nav>
+                    
                 </section>
-                <nav>
-                    <ul>
-                        <li><a href="#Oversikt">Oversikt</a></li>
-                        <li><a href="#Fasiliteter">Fasiliteter</a></li>
-                        <li><a href="#Rom">Rom</a></li>
-                    </ul>
-                </nav>
-
+                <section>
+                    <nav>
+                        <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+                        <ul id="menu">
+                            <li>
+                                <a href="#tips">Tips og inspirasjon</a>
+                            </li>
+                            <li>
+                                <a href="hotell.html">Hotell</a>
+                            </li>
+                            <li>
+                                <a href="https://www.norwegian.no/" target="_blank">Fly</a>
+                            </li>
+                            <li>
+                                <a href="#fot">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="index.html"><img src="img/fav.png" alt="Nettested logo" id="logo"></a>
+                </section>
+            
             </header>
-
-            <section id="">
+    
+            <main id="main">
+                <header>
+                    <section>
+                        <img src="img/landscape-2016308_640.jpg" alt="Basseng med solsenger"> 
+                        <img src="img/beach-1836467_640.jpg" alt="Mennesker som bader på stranden"> 
+                        <img src="img/sea-4768869_1920.jpg" alt="Lys sand møter turkist vann"> 
+                        <img src="img/beach-666122_640.jpg" alt="Tropiske strand med brygge til styltehus med stråtak"> 
+                        <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand"> 
+                        <img src="img/holiday-2733322_1280.jpg" alt="Kvinne nyter utsiken mot tropiske stråhytter fra bassengkanten"> 
+                    
+                    </section>
+                    <nav>
+                        <ul>
+                            <li><a href="#Oversikt">Oversikt</a></li>
+                            <li><a href="#Fasiliteter">Fasiliteter</a></li>
+                            <li><a href="#Rom">Rom</a></li>
+                        </ul>
+                    </nav>
+    
+                </header>
+    
+                <section id="">
+                    
+                    <h2>Parga Beach</h2>
+                    <i class="fa-solid fa-sun checked"></i>
+                    <i class="fa-solid fa-sun checked"></i>
+                    <i class="fa-solid fa-sun checked"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+    
+                    <h3>Fantastisk</h3>
+                    <a href="#">Se alle anmeldelsene <i class="fa-solid fa-angle-right"></i></a>
+    
+                </section>
+    
+                <section id="Fasiliteter">
+                    <h2>Fasiliteter</h2>
+                    <p>Parga Beach tilbyr et tilsynelatende uutømmelig utvalg av sport og aktiviteter og lokker til seg så vel eliteutøvere som aktive familier og hverdagsmosjonister - i all aldre og på alle nivåer</p>
+                    <ul>
+                        <li><i class="fa-solid fa-paw"></i> Kjæledyrvennlig</li>
+                        <li><i class="fa-solid fa-mug-hot"></i> Frokost</li>
+                        <li><i class="fa-solid fa-spa"></i> Spa</li>
+                        <li><i class="fa-solid fa-bell-concierge"></i> Room service</li>
+                        <li><i class="fa-solid fa-martini-glass"></i> Bar</li>
+                        <li><i class="fa-solid fa-dumbbell"></i> Treningssenter</li>
+                    </ul>
+                    <a href="#">Se alle eiendomsfasiliteter <i class="fa-solid fa-angle-right"></i></a>     
+                </section>
+    
+                <section>
+                    <h2>Utforsk området</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49412.10246598362!2d20.35929510899875!3d39.28243532785102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c632e49c7cda5%3A0x9406a292c1e28ae2!2sParga%20Beach%20Resort!5e0!3m2!1sen!2sno!4v1737923323707!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+    
+                <section id="Rom">
+                    <h2>Velg rom</h2>
+                    <article>
+                        <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
+                        <h3>Junior Suite</h3>
+                        <ul>
+                            <li>Plass til 2</li>
+                            <li>Queen size-seng</li>
+                        </ul>
+                        <p>8.9</p><p>56 anmeldelser</p>
+                        <ul>
+                            <li>6 789 kr</li>
+                            <li>for 3 netter, 1 Rom</li>
+                            <li>2 263 kr per natt</li>
+                            <li>ink moms og avgifter</li>
+                        </ul>
+                    </article>
+    
+                    <article>
+                        <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
+                        <h3>Familierom</h3>
+                        <ul>
+                            <li>Plass til 3</li>
+                            <li>Queen size-seng og sovesofa</li>
+                        </ul>
+                        <p>8.9</p><p>56 anmeldelser</p>
+                        <ul>
+                            <li>6 789 kr</li>
+                            <li>for 3 netter, 1 Rom</li>
+                            <li>2 263 kr per natt</li>
+                            <li>ink moms og avgifter</li>
+                        </ul>
+                    </article>
+    
+                    <article>
+                        <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
+                        <h3>Enkeltrom</h3>
+                        <ul>
+                            <li>Plass til 2</li>
+                            <li>2 enkelt senger</li>
+                        </ul>
+                        <p>8.9</p><p>56 anmeldelser</p>
+                        <ul>
+                            <li>6 789 kr</li>
+                            <li>for 3 netter, 1 Rom</li>
+                            <li>2 263 kr per natt</li>
+                            <li>ink moms og avgifter</li>
+                        </ul>
+                    </article>
+    
+                    <article>
+                        <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
+                        <h3>Senoir Suite</h3>
+                        <ul>
+                            <li>Plass til 4</li>
+                            <li>2x Queen size-seng</li>
+                        </ul>
+                        <p>8.9</p><p>56 anmeldelser</p>
+                        <ul>
+                            <li>6 789 kr</li>
+                            <li>for 3 netter, 1 Rom</li>
+                            <li>2 263 kr per natt</li>
+                            <li>ink moms og avgifter</li>
+                        </ul>
+                    </article>
+    
+                </section>
+    
+            </main>
+    
+    
+            <footer id="fot"> 
+                <section id="land">
+                    <img src="flags/sweden.png" alt="Bilde av det svenske flagget"> Sverige
+                    <img src="flags/denmark.png" alt="Bilde av det danske flagget"> Danmark
+                    <img src="flags/norway.png" alt="Bilde av det norske flagget"> Norge
+                    <img src="flags/material.png" alt="Bilde av det finske flagget"> Finland
+                    <img src="flags/netherlands.png" alt="Bilde av det nederlandske flagget"> Nederland
+     
+     
+                 </section>
+    
+                <section>
+                    <h3>Betalingsmetoder</h3>
+                    <a><i class="fa-brands fa-cc-visa"></i></a>
+                    <a><i class="fa-brands fa-cc-mastercard"></i></a>
+                    <a><i class="fa-brands fa-cc-paypal"></i></a>
+                    <a><i class="fa-brands fa-cc-apple-pay"></i></a>
+                    <a><i class="fa-brands fa-cc-amazon-pay"></i></a>
+                </section>
+    
+                <section>
+                    <h3>Nyheter og tilbud</h3>
+                    <fieldset>
+                        <legend>Meld deg på nyhetsbrev her</legend>
+                        <label>
+                            <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no"> 
+                        </label>
+                        <input type="submit" value="Send"> 
+                    </fieldset>
+                    
+                    <a href="#">Kjøp gavekort link</a>
+    
+                </section>
+    
+                <section>
+                    <h3>Kundeservice</h3>
+                    <a href="#">Spørsmål og svar</a>
+                    <a href="#">Chat </a>
+                   <a href="#">Kontakt</a>
+                    <a href="#">Tilgjengelighetserklæring</a>
+                </section>
+    
+                <section>
+                    <h3>Sosiale Medier</h3>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </section>
+    
+            </footer>
+        </div>
+        <script>
+            
+            let toggleMenu = () => {
                 
-                <h2>Parga Beach</h2>
-                <i class="fa-solid fa-sun checked"></i>
-                <i class="fa-solid fa-sun checked"></i>
-                <i class="fa-solid fa-sun checked"></i>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-sun"></i>
-
-                <h3>Fantastisk</h3>
-                <a href="#">Se alle anmeldelsene <i class="fa-solid fa-angle-right"></i></a>
-
-            </section>
-
-            <section id="Fasiliteter">
-                <h2>Fasiliteter</h2>
-                <p>Parga Beach tilbyr et tilsynelatende uutømmelig utvalg av sport og aktiviteter og lokker til seg så vel eliteutøvere som aktive familier og hverdagsmosjonister - i all aldre og på alle nivåer</p>
-                <ul>
-                    <li><i class="fa-solid fa-paw"></i> Kjæledyrvennlig</li>
-                    <li><i class="fa-solid fa-mug-hot"></i> Frokost</li>
-                    <li><i class="fa-solid fa-spa"></i> Spa</li>
-                    <li><i class="fa-solid fa-bell-concierge"></i> Room service</li>
-                    <li><i class="fa-solid fa-martini-glass"></i> Bar</li>
-                    <li><i class="fa-solid fa-dumbbell"></i> Treningssenter</li>
-                </ul>
-                <a href="#">Se alle eiendomsfasiliteter <i class="fa-solid fa-angle-right"></i></a>     
-            </section>
-
-            <section>
-                <h2>Utforsk området</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49412.10246598362!2d20.35929510899875!3d39.28243532785102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135c632e49c7cda5%3A0x9406a292c1e28ae2!2sParga%20Beach%20Resort!5e0!3m2!1sen!2sno!4v1737923323707!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </section>
-
-            <section id="Rom">
-                <h2>Velg rom</h2>
-                <article>
-                    <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
-                    <h3>Junior Suite</h3>
-                    <ul>
-                        <li>Plass til 2</li>
-                        <li>Queen size-seng</li>
-                    </ul>
-                    <p>8.9</p><p>56 anmeldelser</p>
-                    <ul>
-                        <li>6 789 kr</li>
-                        <li>for 3 netter, 1 Rom</li>
-                        <li>2 263 kr per natt</li>
-                        <li>ink moms og avgifter</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
-                    <h3>Familierom</h3>
-                    <ul>
-                        <li>Plass til 3</li>
-                        <li>Queen size-seng og sovesofa</li>
-                    </ul>
-                    <p>8.9</p><p>56 anmeldelser</p>
-                    <ul>
-                        <li>6 789 kr</li>
-                        <li>for 3 netter, 1 Rom</li>
-                        <li>2 263 kr per natt</li>
-                        <li>ink moms og avgifter</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
-                    <h3>Enkeltrom</h3>
-                    <ul>
-                        <li>Plass til 2</li>
-                        <li>2 enkelt senger</li>
-                    </ul>
-                    <p>8.9</p><p>56 anmeldelser</p>
-                    <ul>
-                        <li>6 789 kr</li>
-                        <li>for 3 netter, 1 Rom</li>
-                        <li>2 263 kr per natt</li>
-                        <li>ink moms og avgifter</li>
-                    </ul>
-                </article>
-
-                <article>
-                    <img src="img/beach-6514331_640.jpg" alt="Bukt med sandstrand">
-                    <h3>Senoir Suite</h3>
-                    <ul>
-                        <li>Plass til 4</li>
-                        <li>2x Queen size-seng</li>
-                    </ul>
-                    <p>8.9</p><p>56 anmeldelser</p>
-                    <ul>
-                        <li>6 789 kr</li>
-                        <li>for 3 netter, 1 Rom</li>
-                        <li>2 263 kr per natt</li>
-                        <li>ink moms og avgifter</li>
-                    </ul>
-                </article>
-
-            </section>
-
-        </main>
-
-
-        <footer id="fot"> 
-            <section>
-                <img src="flags/sweden.png" alt="Bilde av det svenske flagget"> Sverige
-                <img src="flags/denmark.png" alt="Bilde av det danske flagget"> Danmark
-                <img src="flags/norway.png" alt="Bilde av det norske flagget"> Norge
-                <img src="flags/material.png" alt="Bilde av det finske flagget"> Finland
-                <img src="flags/netherlands.png" alt="Bilde av det nederlandske flagget"> Nederland
- 
- 
-             </section>
-
-            <section>
-                <h3>Betalingsmetoder</h3>
-                <a><i class="fa-brands fa-cc-visa"></i></a>
-                <a><i class="fa-brands fa-cc-mastercard"></i></a>
-                <a><i class="fa-brands fa-cc-paypal"></i></a>
-                <a><i class="fa-brands fa-cc-apple-pay"></i></a>
-                <a><i class="fa-brands fa-cc-amazon-pay"></i></a>
-            </section>
-
-            <section>
-                <h3>Nyheter og tilbud</h3>
-                <fieldset>
-                    <legend>Meld deg på nyhetsbrev her</legend>
-                    <label>
-                        <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required placeholder="eksempel@hiof.no"> 
-                    </label>
-                    <input type="submit" value="Send"> 
-                </fieldset>
-                
-                <a href="#">Kjøp gavekort link</a>
-
-            </section>
-
-            <section>
-                <h3>Kundeservice</h3>
-                <a href="#">Spørsmål og svar</a>
-                <a href="#">Chat </a>
-               <a href="#">Kontakt</a>
-                <a href="#">Tilgjengelighetserklæring</a>
-            </section>
-
-            <section>
-                <h3>Sosiale Medier</h3>
-                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
-                <a href="https://www.tiktok.com/explore" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </section>
-
-        </footer>
+                let x = document.getElementById("menu");
+        
+               
+                if (x.style.display === "flex") {
+                    
+                    x.style.display = "none";
+                } else {
+                    
+                    x.style.display = "flex";
+                }
+            }
+        </script>
 
     </body>
 
