@@ -23,7 +23,7 @@ body{
     height: 1px;
     overflow: hidden;
   }
-  
+
 .skip:focus {
     position: static;
     width: auto;
@@ -39,6 +39,17 @@ img{
     width: 100%;
 }
 
+section.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+  }
+  
+  section.scroll-container img {
+    padding:0;
+    
+  }
 
 nav {
     display: flex ;
